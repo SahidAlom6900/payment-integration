@@ -1,0 +1,25 @@
+server:
+  port: 9090
+   
+paypal:
+  mode: sandbox
+  client:
+    id: Affa1DYXR9Shigm_R54L_w8h4_RJ0gsUFJcou1c15yZuNxW6QqoF-ZwY4GfN8aeHW8LS9TL0Ohw8Kv_K
+    secret: EDl60lMOq321XzT5a-kFG_obizPDijWNoCzLtXQcnMcql7UHQna2KZnteuzVmB3VpmTDRZXfuObqi0fU
+
+spring:    
+  datasource:
+    url: jdbc:mysql://localhost:3306/payment_details?createDatabaseIfNotExist=true
+    username: root
+    password: root      
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+
+logging:
+  level:
+    web: DEBUG
+    
